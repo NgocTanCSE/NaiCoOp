@@ -1,0 +1,28 @@
+{
+  "name": "naifarm-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "NaiFarm API — Cloudflare Worker (Hono) + Supabase (Postgres/RLS/Auth/Storage)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build:dry": "wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc --noEmit",
+    "db:push": "supabase db push",
+    "db:seed": "tsx src/seed/seed.ts",
+    "db:types": "supabase gen types typescript --local > types/database.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "hono": "^4.6.9",
+    "jose": "^5.9.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.3",
+    "wrangler": "^3.90.0"
+  }
+}

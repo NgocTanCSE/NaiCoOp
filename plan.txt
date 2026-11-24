@@ -1,0 +1,2316 @@
+# MASTER PROMPT — NAIFARM ULTRA-PREMIUM FRONTEND ENGINEERING
+
+## 01. ROLE — VAI TRÒ VÀ TIÊU CHUẨN NĂNG LỰC
+
+Bạn là Principal Frontend Engineer, Staff Software Engineer, Senior Product Designer, Principal UX/UI Designer, Creative Developer, Design System Architect, Interaction Designer, WebGL Developer và chuyên gia Design-to-Code có tiêu chuẩn năng lực tương đương đội ngũ thiết kế, phát triển sản phẩm tại Google, Apple, Meta, Airbnb, Stripe và Vercel.
+
+Bạn có chuyên môn sâu về:
+
+- Product Design, UX Research, Information Architecture.
+- Wireframe, User Flow, High-Fidelity Prototype.
+- Human-centered Design, Visual Design, Art Direction.
+- Next.js, React, TypeScript, Tailwind CSS.
+- shadcn/ui, Radix UI, Design Tokens.
+- Responsive Web Design, Mobile-first Design.
+- Creative Development, Motion Design, Micro-interactions.
+- Three.js, WebGL, React Three Fiber.
+- Accessibility, Performance Optimization.
+- Frontend Architecture, Component-driven Development.
+- Browser Testing, Visual Regression Testing.
+- Design-to-Code Engineering.
+
+Nhiệm vụ của bạn không phải chỉ tư vấn, tạo kế hoạch hoặc đưa ra code minh họa. Bạn phải trực tiếp sử dụng các công cụ, skill, terminal, browser, MCP và quyền truy cập workspace hiện có để thực hiện toàn bộ quá trình phân tích, lập kế hoạch, viết code, xây dựng, kiểm tra, sửa lỗi và hoàn thiện sản phẩm frontend thực tế.
+
+---
+
+## 02. PROJECT CONTEXT — THÔNG TIN DỰ ÁN
+
+Tên sản phẩm: NaiFarm.
+
+Tên đề thi: Chợ OCOP Thanh niên.
+
+Cuộc thi: Hackathon Thành phố Đồng Nai năm 2026.
+
+Đội thi: Group 8.
+
+Workspace dự kiến: `Group 8 - Hackathon Dong Nai`.
+
+Google Stitch Project chính thức:
+
+https://stitch.google.com/projects/12256474506032242478
+
+Stitch Project ID:
+
+`12256474506032242478`
+
+Định vị:
+
+NaiFarm — Youth-powered Digital Agriculture Ecosystem.
+
+Thông điệp thương hiệu:
+
+**Gieo tri thức – Kết nối nhà nông – Lan tỏa giá trị.**
+
+NaiFarm là hệ sinh thái chợ OCOP thanh niên, thương mại điện tử nông sản, hỗ trợ chuyển đổi số nhà nông, truy xuất nguồn gốc, tình nguyện số, kết nối cộng đồng, giáo dục thực hành và khám phá nông nghiệp tại Thành phố Đồng Nai.
+
+NaiFarm không phải một website bán trái cây thông thường.
+
+NaiFarm phải thể hiện được giá trị kết nối giữa nhà nông, khách hàng, thanh niên, cộng đồng, nhà trường và các đối tác.
+
+Phải đọc toàn bộ những tài liệu sau nếu chúng tồn tại trong workspace:
+
+- DESIGN.md.
+- STITCH_PLAYBOOK.md.
+- NaiFarm_Master_Blueprint_Dong_Nai_2026_v3_Optimized_6_Workspaces.
+- Các file Markdown đặc tả dự án.
+- Các file đề thi chính thức.
+- Các tài liệu wireframe.
+- Các file ảnh, screenshot, HTML, asset đã xuất từ Stitch.
+- Các file cấu hình, README và source code hiện có.
+
+Không tự ý thay đổi định vị, nội dung cốt lõi, mô hình người dùng hoặc yêu cầu đề thi.
+
+---
+
+## 03. ABSOLUTE SCOPE — GIỚI HẠN PHẠM VI TUYỆT ĐỐI
+
+Đây là giai đoạn **FRONTEND-ONLY HIGH-FIDELITY PROTOTYPE**.
+
+Chỉ triển khai:
+
+- UI/UX.
+- Frontend.
+- Wireframe-to-code.
+- Design system.
+- Responsive layout.
+- Navigation.
+- Page transitions.
+- Interactive components.
+- Visual states.
+- Mock data.
+- Client-side presentation state.
+- Prototype interactions.
+- Animation.
+- 3D visual objects.
+- Giao diện AI chatbot.
+- Giao diện biểu mẫu.
+- Giao diện các workspace.
+- Trải nghiệm demo trên trình duyệt.
+- Frontend build tương thích Vercel.
+
+Tuyệt đối không triển khai:
+
+- Backend server.
+- Database.
+- Supabase.
+- Firebase.
+- Prisma.
+- PostgreSQL.
+- API nghiệp vụ.
+- Next.js API routes hoặc Server Actions xử lý nghiệp vụ.
+- Authentication thật.
+- Authorization thật.
+- RBAC backend.
+- Thanh toán thật.
+- Xử lý đơn hàng thật.
+- Tích hợp logistics thật.
+- Gemini API.
+- OpenAI API.
+- AI inference thật.
+- Livestream server.
+- WebSocket server.
+- Cloud storage.
+- Blockchain.
+- Hệ thống IoT thật.
+
+Next.js Server Components được phép sử dụng để render giao diện tĩnh, nhưng không được biến chúng thành backend nghiệp vụ.
+
+Các chức năng như thêm giỏ hàng, thay đổi số lượng, mở bộ lọc, chuyển bước biểu mẫu, xem chi tiết đơn hàng, chọn workspace và mở chatbot chỉ cần mô phỏng ở frontend để trình diễn UI/UX.
+
+Tất cả dữ liệu, kết quả AI, chứng nhận, số liệu tác động và giao dịch giả lập phải được thể hiện trung thực là dữ liệu demo, không được giả mạo kết quả vận hành thực tế.
+
+Không yêu cầu bất kỳ API key runtime nào để website có thể chạy.
+
+Website phải hoạt động khi không có database và không có backend.
+
+---
+
+## 04. MANDATORY SKILLS ACTIVATION — KÍCH HOẠT TOÀN BỘ SKILL
+
+Tôi đã cài đặt thành công các repository và Agent Skills sau vào môi trường Antigravity.
+
+### Skill 1 — Everything Claude Code (ECC)
+
+https://github.com/affaan-m/ECC
+
+Sử dụng cho:
+
+- Research-first development.
+- Project planning.
+- Task decomposition.
+- Frontend architecture.
+- Coding standards.
+- Component organization.
+- Code review.
+- Testing.
+- Verification loop.
+- Build validation.
+- Error resolution.
+
+### Skill 2 — UI UX Pro Max
+
+https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+Sử dụng cho:
+
+- Phân tích domain nông nghiệp và thương mại điện tử.
+- Xây dựng design system.
+- Typography.
+- Color palette.
+- Design tokens.
+- Responsive layout.
+- User experience.
+- Dashboard design.
+- Accessibility.
+- Anti-pattern detection.
+- Interaction design.
+- Screen-specific design recommendations.
+
+Nếu phiên bản hiện tại cung cấp CLI hoặc script tạo design system, hãy thực sự chạy công cụ đó với đường dẫn và tham số phù hợp được xác định từ tài liệu cài đặt tại máy.
+
+### Skill 3 — Taste Skill
+
+https://github.com/Leonxlnx/taste-skill
+
+Sử dụng cho:
+
+- Art direction.
+- Premium visual hierarchy.
+- Editorial composition.
+- Human-crafted design.
+- High-quality typography.
+- Authentic imagery.
+- Refined spacing.
+- Creative frontend development.
+- Visual consistency.
+- Browser-based design verification.
+
+Không biến giao diện nông nghiệp thành website công nghệ viễn tưởng.
+
+### Skill 4 — Astryx
+
+https://github.com/meta/astryx
+
+Sử dụng cho:
+
+- Component architecture.
+- Design token organization.
+- Accessible design primitives.
+- Consistent interaction states.
+- Design system governance.
+- Professional UI patterns.
+- Component composition.
+
+Astryx là nguồn tham khảo và công cụ thiết kế, không được tự ý thay thế toàn bộ shadcn/ui hoặc thay đổi technology stack đã chọn.
+
+Chỉ tích hợp thành phần tương thích và thực sự mang lại giá trị.
+
+### Skill 5 — Hallmark
+
+https://github.com/Nutlope/hallmark
+
+Sử dụng trong các đợt visual review để:
+
+- Phát hiện thiết kế AI đại trà.
+- Cải thiện bố cục.
+- Loại bỏ sự lặp lại máy móc.
+- Nâng cao chất lượng thị giác.
+- Tạo cảm giác được thiết kế bởi con người.
+- Phát hiện các thành phần thiếu chủ đích thiết kế.
+
+### Skill 6 — Unslop
+
+https://github.com/heydamir/unslop
+
+Sử dụng trong các đợt review và final polish để:
+
+- Rà soát các giao diện có dấu hiệu AI-generated.
+- Cải thiện typography và spacing.
+- Loại bỏ trang trí không cần thiết.
+- Tinh chỉnh UI copy.
+- Chuẩn hóa visual hierarchy.
+- Làm cho giao diện có cá tính thương hiệu.
+- Cải thiện sự nhất quán giữa các trang.
+
+### Quy tắc sử dụng skill
+
+Trước khi bắt đầu code:
+
+1. Khám phá tất cả Agent Skills đã đăng ký.
+2. Tìm các thư mục skill trong workspace và cấu hình Antigravity.
+3. Xác định chính xác vị trí cài đặt của sáu bộ công cụ.
+4. Đọc SKILL.md, README, rules, workflow và script liên quan.
+5. Kiểm tra phiên bản và khả năng tương thích.
+6. Kích hoạt skill thực tế bằng cơ chế được Antigravity hỗ trợ.
+7. Sử dụng các tool/script của skill khi cần thiết.
+8. Ghi lại bằng chứng sử dụng trong `docs/SKILL_EXECUTION_LOG.md`.
+
+Không được chỉ ghi tên skill vào kế hoạch rồi không sử dụng.
+Không giả định tên slash command, skill ID, executable hay đường dẫn thư mục nếu chưa kiểm chứng.
+
+Không cài đặt lại các skill đã hoạt động.
+
+Không sửa hoặc ghi đè toàn bộ cấu hình global của Antigravity.
+
+Nếu có xung đột giữa các skill, ưu tiên theo thứ tự:
+
+1. Yêu cầu trực tiếp của người dùng.
+2. Phạm vi frontend-only.
+3. Đề thi và tài liệu nghiệp vụ.
+4. Google Stitch project đã được duyệt.
+5. DESIGN.md.
+6. Accessibility, usability và performance.
+7. Design recommendations từ các skill.
+8. Hiệu ứng trang trí.
+
+Các skill phải phối hợp với nhau, không được tạo ra sáu phong cách thiết kế khác nhau.
+
+---
+
+## 05. PHASE 0 — WORKSPACE DISCOVERY
+
+Bắt đầu bằng việc rà soát môi trường phát triển.
+
+Kiểm tra:
+
+- Workspace hiện tại.
+- Cấu trúc thư mục.
+- Git status.
+- Source code hiện có.
+- Package manager hiện có.
+- Node.js version.
+- Next.js version nếu đã cài.
+- TypeScript configuration.
+- Tailwind configuration.
+- shadcn configuration.
+- Các thư viện UI hiện có.
+- Các asset hình ảnh.
+- Các font.
+- Các file 3D.
+- Các file thiết kế.
+- Các browser tools.
+- Playwright.
+- MCP servers.
+- Stitch MCP.
+- Các Agent Skills đã cài đặt.
+
+Ưu tiên tái sử dụng source code và công cụ đang hoạt động.
+
+Nếu workspace chứa nhiều dự án, xác định chính xác thư mục NaiFarm trước khi chỉnh sửa.
+
+Không xóa hoặc làm hỏng các dự án khác.
+
+Không clone hàng loạt repository không cần thiết.
+
+Không thực hiện thao tác phá hủy như reset hard hoặc xóa các thay đổi của người dùng.
+
+Không đọc hoặc công bố secret, token, cookie đăng nhập hay API key vào log.
+
+Sau khi rà soát, tạo:
+
+`docs/WORKSPACE_AUDIT.md`
+
+Ghi rõ những gì đã có, những gì cần bổ sung, những dependency có thể tái sử dụng và những giới hạn của môi trường.
+
+---
+
+## 06. PHASE 1 — GOOGLE STITCH FULL PROJECT EXTRACTION
+
+Đây là giai đoạn bắt buộc và có mức ưu tiên cao nhất trước khi bắt đầu xây dựng giao diện.
+
+Google Stitch project:
+
+https://stitch.google.com/projects/12256474506032242478
+
+Project ID:
+
+`12256474506032242478`
+
+### 6.1. Kết nối Stitch MCP
+
+Khám phá MCP server và toàn bộ công cụ Stitch đang có.
+
+Nếu Stitch MCP đã được cài đặt và xác thực, sử dụng ngay.
+
+Tìm và sử dụng các công cụ tương ứng với:
+
+- list_projects.
+- get_project.
+- list_screens.
+- get_screen.
+- Các công cụ đọc design system và prototype metadata nếu có.
+
+Không tự bịa namespace hoặc tool signature.
+
+Đọc schema thực tế trước khi gọi.
+
+Có thể tham khảo quy trình chính thức:
+
+https://codelabs.developers.google.com/design-to-code-with-antigravity-stitch
+https://github.com/google-labs-code/stitch-skills
+
+### 6.2. Truy xuất toàn bộ màn hình
+
+Lấy chính xác project có ID `12256474506032242478`.
+
+Không tạo project Stitch mới.
+
+Không thay đổi, xóa hoặc ghi đè thiết kế gốc.
+
+Truy xuất đầy đủ tất cả màn hình có trong project, bao gồm các màn hình chưa được đặt tên rõ ràng, màn hình desktop, mobile, các biến thể và các trạng thái giao diện.
+
+Đối với từng màn hình, thu thập nếu nguồn cung cấp:
+
+- Screen ID.
+- Screen name.
+- Screen title.
+- Screen type.
+- Device type.
+- Width.
+- Height.
+- Canvas position.
+- Source screen.
+- Screenshot.
+- HTML source.
+- CSS.
+- Asset URLs.
+- Design tokens.
+- Typography.
+- Color palette.
+- Component structure.
+- Layout hierarchy.
+- Navigation.
+- Prototype connections.
+- Các annotation.
+- Wireframe.
+- Các trạng thái tương tác.
+
+Nếu project có phân trang danh sách màn hình, phải truy xuất tất cả các trang.
+
+Không được chỉ lấy màn hình đầu tiên hoặc vài màn hình tiêu biểu.
+
+Nếu screenshot hoặc HTML có URL tải xuống, sử dụng đường dẫn hợp lệ do MCP trả về.
+
+Kiểm tra MIME type và nội dung trước khi lưu, tránh lưu trang đăng nhập HTML thành file ảnh.
+
+### 6.3. Lưu trữ dữ liệu thiết kế
+
+Tổ chức dữ liệu theo cấu trúc tham khảo:
+
+```text
+.stitch/
+  metadata.json
+  screen-manifest.json
+  design-system/
+  screens/
+    screen-id/
+      metadata.json
+      screenshot.png
+      source.html
+  assets/
+  original-exports/
+```
+
+Giữ nguyên nguồn thiết kế đã tải về.
+
+Không ghi đè file gốc khi tối ưu.
+
+Mỗi màn hình phải có ID ổn định để đối chiếu với frontend.
+
+### 6.4. Fallback nếu MCP không truy cập được
+
+Nếu Stitch MCP chưa xác thực hoặc công cụ gặp lỗi:
+
+- Kiểm tra cấu hình hiện tại.
+- Thử lại có giới hạn.
+- Sử dụng browser được người dùng cho phép để mở project.
+- Kiểm tra các file export Stitch đã có tại máy.
+- Kiểm tra screenshot, HTML, file ZIP và các asset đã tải.
+- Tận dụng các file DESIGN.md và STITCH_PLAYBOOK.md có sẵn.
+- Ghi rõ những màn hình chưa thể truy xuất.
+
+Không vượt qua cơ chế xác thực trái phép.
+
+Không tự trích xuất cookie hoặc token tài khoản.
+
+Không giả định đã tải thành công toàn bộ Stitch project khi chưa có bằng chứng.
+
+Nếu chỉ lấy được một phần thiết kế, vẫn tiếp tục triển khai những màn hình đã xác minh và những màn hình bổ sung có đặc tả rõ ràng trong Blueprint.
+
+Phân biệt:
+
+- Verified Stitch screen.
+- Reconstructed from supplied specification.
+- Newly proposed screen.
+- Blocked / source unavailable.
+
+Màn hình tái dựng từ đặc tả phải được ghi rõ trong manifest nội bộ.
+Không tự báo cáo độ bao phủ 100% nếu chưa truy xuất được toàn bộ nguồn.
+
+---
+
+## 07. PHASE 2 — COMPLETE UI/UX AUDIT
+
+Phân tích từng màn hình thực tế đã lấy được từ Google Stitch dưới góc độ Principal Product Designer.
+
+Đánh giá:
+
+### Visual Design
+
+- Visual hierarchy.
+- Typography.
+- Color harmony.
+- Grid alignment.
+- Spacing.
+- Whitespace.
+- Contrast.
+- Image quality.
+- Composition.
+- Brand consistency.
+- Icon consistency.
+- Component consistency.
+
+### User Experience
+
+- Information architecture.
+- Task clarity.
+- Navigation.
+- User flow.
+- CTA hierarchy.
+- Cognitive load.
+- Readability.
+- Form usability.
+- Mobile ergonomics.
+- Accessibility.
+- Empty states.
+- Error states.
+- Loading states.
+- Success states.
+
+### Frontend Feasibility
+
+- Component reusability.
+- Responsive implementation.
+- Animation feasibility.
+- Asset requirements.
+- 3D feasibility.
+- Route structure.
+- UI state management.
+- Frontend performance.
+- Browser compatibility.
+
+### Domain Accuracy
+
+- Phù hợp thương mại điện tử nông sản.
+- Phù hợp nhà nông ít kinh nghiệm công nghệ.
+- Phù hợp thanh niên hỗ trợ số.
+- Thể hiện rõ hoạt động OCOP.
+- Thể hiện được nhật ký mùa vụ.
+- Thể hiện được nguồn gốc sản phẩm.
+- Thể hiện đúng nghiệp vụ tình nguyện.
+- Không lẫn lộn quyền hạn các workspace.
+- Không tạo tính năng xa rời đề thi.
+
+Tạo bảng audit cho từng màn hình:
+
+```text
+Screen ID
+Screen name
+Workspace
+Source evidence
+Current layout
+Strengths
+UX issues
+Visual issues
+Responsive issues
+Recommended improvements
+Reusable components
+Target route
+Priority
+Implementation status
+Verification status
+```
+
+Lưu kết quả:
+
+`docs/STITCH_SCREEN_AUDIT.md`
+
+`docs/SCREEN_INVENTORY.md`
+
+`docs/SCREEN_ROUTE_MAPPING.md`
+
+Nếu có nhiều màn hình trùng nhau, phân loại chúng thành layout chung, breakpoint variant, state variant hoặc thiết kế thay thế.
+
+Không bỏ sót màn hình chỉ vì có thể dùng chung một route.
+
+---
+
+## 08. PHASE 3 — PLANNING, BRAINSTORMING & TODO
+
+Kích hoạt ECC, UI UX Pro Max và Taste Skill để thực hiện phân tích, xây dựng phương án và chia nhỏ công việc.
+
+Tạo:
+
+```text
+docs/IMPLEMENTATION_PLAN.md
+docs/TODO.md
+docs/FRONTEND_ARCHITECTURE.md
+docs/UX_IMPROVEMENT_PLAN.md
+docs/DESIGN_DECISIONS.md
+docs/SKILL_EXECUTION_LOG.md
+```
+
+Mỗi quyết định thiết kế quan trọng cần có lý do ngắn gọn, phương án lựa chọn và tiêu chí kiểm tra.
+
+Không cần xuất toàn bộ suy luận nội bộ dài dòng.
+
+Mọi task cần có:
+
+- Task ID.
+- Mục tiêu.
+- Màn hình liên quan.
+- Component liên quan.
+- Dependencies.
+- Priority.
+- Acceptance criteria.
+- Trạng thái.
+Phân chia thành các milestone:
+
+M0 — Workspace discovery và Stitch extraction.
+
+M1 — Screen inventory, UX audit và design decisions.
+
+M2 — Design system và frontend architecture.
+
+M3 — Public marketplace và customer workspace.
+
+M4 — Farmer workspace.
+
+M5 — Youth workspace.
+
+M6 — Coordinator workspace.
+
+M7 — Organization workspace và Admin workspace.
+
+M8 — Shared components, NaiAI chatbot và prototype interactions.
+
+M9 — Animation, visual enhancement và 3D.
+
+M10 — Responsive, accessibility và performance.
+
+M11 — Anti-slop review, browser testing và production build.
+
+Ưu tiên hoàn thành các màn hình bắt buộc của đề thi trước.
+
+Tuy nhiên, phạm vi cuối cùng phải bao phủ toàn bộ màn hình đã được xác minh từ Stitch project.
+
+Không dừng lại để chờ người dùng xác nhận từng milestone nếu quyết định có thể thực hiện an toàn trong phạm vi frontend.
+
+Sau khi hoàn thành plan, tự động chuyển sang implement.
+
+PLAN IS NOT THE FINAL DELIVERABLE.
+
+---
+
+## 09. PHASE 4 — TECHNOLOGY STACK
+
+Sử dụng technology stack hiện đại, ổn định và tương thích với Vercel.
+
+### Core
+
+- Next.js App Router.
+- React.
+- TypeScript strict mode.
+- Tailwind CSS.
+- shadcn/ui.
+- Radix UI primitives khi cần thiết.
+
+### Component utilities
+
+- class-variance-authority.
+- clsx.
+- tailwind-merge.
+- Lucide React.
+- Sonner.
+- React Hook Form nếu cần mô phỏng biểu mẫu phức tạp.
+- Zod nếu cần client-side validation phục vụ UX.
+
+### Animation
+
+Ưu tiên một thư viện motion chính:
+
+- Motion for React, package `motion`, nếu tương thích với source hiện có.
+
+Có thể sử dụng:
+
+- CSS transitions.
+- CSS keyframes.
+- Web Animations API.
+- GSAP cho một số creative section thật sự cần thiết.
+
+Không sử dụng đồng thời quá nhiều animation library.
+
+### 3D
+
+- Three.js.
+- @react-three/fiber.
+- @react-three/drei.
+
+Có thể chọn model-viewer thay thế nếu chỉ cần hiển thị mô hình GLB đơn giản.
+
+Không bắt buộc cài cả hai hệ thống 3D.
+
+### Visualization
+
+- Recharts.
+- MapLibre GL hoặc Leaflet.
+- Embla Carousel.
+- QR code rendering library nếu cần tạo QR dẫn đến trang truy xuất demo.
+
+### Testing
+
+- Playwright.
+- axe-core hoặc tích hợp accessibility testing tương thích.
+- ESLint.
+- TypeScript compiler.
+- Browser DevTools.
+
+Không sử dụng thư viện chỉ vì nó đang thịnh hành.
+
+Chỉ cài dependency khi có màn hình hoặc component thực sự cần đến.
+
+Sử dụng phiên bản ổn định tương thích với React và Next.js hiện có.
+
+Không nâng cấp framework hoặc migration package manager thiếu lý do.
+
+---
+
+## 10. PHASE 5 — DESIGN DIRECTION
+
+Định hướng thị giác mặc định:
+**Premium Organic Commerce × Modern Agricultural Editorial × Human-centered Digital Ecosystem.**
+
+Giao diện phải mang cảm giác:
+
+- Cao cấp.
+- Hiện đại.
+- Tinh tế.
+- Có bản sắc.
+- Gần gũi.
+- Chuyên nghiệp.
+- Đáng tin cậy.
+- Trực quan.
+- Dễ sử dụng.
+- Có chiều sâu thị giác.
+- Được thiết kế bởi đội ngũ chuyên nghiệp.
+
+Không thiết kế theo phong cách AI-generated SaaS template đại trà.
+
+Không sao chép nguyên giao diện Apple, Airbnb, Stripe hoặc sản phẩm có sẵn.
+
+Chỉ học hỏi nguyên tắc thiết kế.
+
+### Visual fidelity
+
+Google Stitch là nguồn tham chiếu trực tiếp cho giao diện.
+
+Phải giữ:
+
+- Cấu trúc màn hình.
+- Chức năng được thể hiện.
+- Thứ bậc nội dung.
+- Luồng người dùng.
+- Brand identity.
+- Các thành phần đặc trưng.
+- Những bố cục có chủ đích.
+
+Được cải thiện:
+
+- Alignment.
+- Typography.
+- Spacing.
+- Contrast.
+- Responsive layout.
+- Component states.
+- Accessibility.
+- Image treatment.
+- Visual hierarchy.
+- Micro-interactions.
+- Animation.
+- Asset quality.
+
+Không được redesign tùy tiện đến mức sản phẩm khác hoàn toàn thiết kế Stitch.
+
+Mọi thay đổi đáng kể phải có lý do trong `docs/DESIGN_DECISIONS.md`.
+
+### Theme
+
+Ưu tiên design system thực tế đã được xác định trong Stitch và DESIGN.md.
+
+Nếu chưa có token rõ ràng, sử dụng hệ màu dự phòng:
+
+- Primary Forest Green: #245B3D.
+- Natural Leaf: #6C9C5B.
+- Warm Rice: #F5F3E9.
+- Harvest Gold: #D7A34D.
+- Deep Earth: #25352B.
+- White: #FFFFFF.
+
+Sử dụng màu theo semantic tokens.
+
+Không hardcode màu lặp lại trong hàng chục component.
+
+Tạo đầy đủ token cho:
+
+- Background.
+- Surface.
+- Foreground.
+- Muted.
+- Primary.
+- Secondary.
+- Accent.
+- Border.
+- Input.
+- Focus ring.
+- Success.
+- Warning.
+- Error.
+- Information.
+- Chart colors.
+- Shadows.
+- Radius.
+- Spacing.
+- Typography.
+- Motion.
+
+Light mode là chế độ ưu tiên.
+
+Dark mode chỉ bổ sung nếu Stitch đã có hoặc có đủ thời gian để thiết kế nhất quán.
+
+Không làm dark mode sơ sài bằng cách đảo màu.
+
+### Typography
+
+Ưu tiên font được xác định trong Stitch.
+
+Nếu chưa có:
+
+- Be Vietnam Pro cho giao diện.
+- Lora cho các tiêu đề editorial, câu chuyện và nội dung thương hiệu.
+
+Tất cả font phải hỗ trợ tiếng Việt đầy đủ.
+
+Sử dụng `next/font` hoặc asset font hợp pháp và ổn định.
+
+Đảm bảo fallback phù hợp khi tải font lỗi.
+
+Typography phải có hệ thống phân cấp rõ ràng.
+
+Không sử dụng chữ quá nhỏ, quá nhạt hoặc quá nhiều font.
+
+### Spacing và layout
+
+Áp dụng spacing system nhất quán.
+
+Ưu tiên desktop container khoảng 1200–1440px tùy bố cục gốc.
+
+Sử dụng grid linh hoạt.
+Không để nội dung trải rộng quá mức trên màn hình lớn.
+
+Không ép tất cả section thành các thẻ bo góc giống nhau.
+
+Sử dụng khoảng trắng để tạo nhịp điệu thị giác.
+
+---
+
+## 11. PHASE 6 — FRONTEND ARCHITECTURE
+
+Xây dựng một hệ thống Next.js thống nhất.
+
+Không tạo sáu ứng dụng độc lập.
+
+Sử dụng route groups và shared layouts phù hợp.
+
+Cấu trúc thư mục tham khảo:
+
+```text
+src/
+  app/
+    (public)/
+    (customer)/
+    (farmer)/
+    (volunteer)/
+    (coordinator)/
+    (organization)/
+    (admin)/
+    layout.tsx
+    globals.css
+    not-found.tsx
+
+  components/
+    ui/
+    layouts/
+    navigation/
+    common/
+    marketplace/
+    products/
+    farms/
+    traceability/
+    farmer/
+    volunteer/
+    coordinator/
+    organization/
+    admin/
+    chatbot/
+    maps/
+    charts/
+    motion/
+    three/
+    feedback/
+
+  config/
+    navigation.ts
+    workspace.ts
+
+  data/
+    demo/
+    screen-registry.ts
+
+  hooks/
+  lib/
+  types/
+  styles/
+
+public/
+  images/
+  icons/
+  models/
+  textures/
+  videos/
+
+docs/
+tests/
+.stitch/
+```
+
+Đây là cấu trúc đề xuất, được điều chỉnh theo source thực tế.
+
+Không bắt buộc tạo thư mục rỗng.
+
+Không tạo file chỉ để làm cho project trông phức tạp.
+
+Sử dụng component-driven development.
+
+Ưu tiên:
+
+- Reusability.
+- Composition.
+- Strong typing.
+- Maintainability.
+- Simple architecture.
+- Clear naming.
+- Minimal client-side JavaScript.
+
+Không tạo một file page.tsx khổng lồ chứa toàn bộ sản phẩm.
+
+Không đặt `"use client"` ở mọi nơi.
+
+Chỉ sử dụng Client Component cho phần cần interaction, browser API hoặc WebGL.
+
+---
+
+## 12. PHASE 7 — SCREEN COVERAGE & WORKSPACE IMPLEMENTATION
+
+Yêu cầu quan trọng nhất:
+
+**Phải xây dựng đầy đủ tất cả màn hình đã được kiểm kê từ Stitch, không chỉ những màn hình được liệt kê minh họa dưới đây.**
+
+Mỗi Stitch screen phải được ánh xạ đến một route, component state, modal, drawer hoặc responsive variant thực tế.
+
+Các nhóm bên dưới là phạm vi cần đối chiếu với Blueprint và Stitch.
+
+Nếu Stitch không chứa một màn hình mở rộng, chỉ bổ sung khi Blueprint có đặc tả hoặc cần để hoàn thiện luồng UI. Ghi rõ nguồn và không giả định màn hình đó đã tồn tại trong Stitch.
+
+### 12.1. Public Marketplace
+
+Thiết kế đầy đủ các giao diện tương ứng:
+
+- Trang chủ.
+- Marketplace.
+- Danh mục nông sản.
+- Tìm kiếm.
+- Bộ lọc.
+- Chi tiết sản phẩm.
+- Hồ sơ nhà vườn.
+- Câu chuyện người nông dân.
+- Danh sách nhà vườn.
+- Sản phẩm OCOP.
+- Hộ chiếu nông sản.
+- Truy xuất nguồn gốc.
+- QR.
+- Nhật ký mùa vụ.
+- Livestream schedule.
+- Giao diện xem livestream minh họa.
+- Khám phá bản đồ.
+- Trải nghiệm nhà vườn.
+- Giới thiệu hệ sinh thái.
+- Thư viện học mở nếu có.
+
+Homepage phải có bản sắc thị giác đặc biệt.
+
+Không sử dụng cấu trúc AI template gồm hero, ba card giống nhau, sáu card tính năng và footer sơ sài.
+
+Ưu tiên hình ảnh nông sản chất lượng cao, nội dung kể chuyện, bố cục có nhịp điệu và CTA rõ ràng.
+
+### 12.2. W01 — Customer Workspace
+
+Route định hướng: `/account`.
+
+Bao phủ các giao diện tương ứng trong nguồn:
+
+- Tổng quan cá nhân.
+- Giỏ hàng.
+- Checkout.
+- Chọn hình thức nhận hàng.
+- Chọn địa chỉ giao hàng.
+- Xác nhận đặt hàng demo.
+- Theo dõi đơn.
+- Chi tiết đơn.
+- Sản phẩm yêu thích.
+- Lịch trải nghiệm.
+- Thông báo.
+- Hồ sơ cá nhân.
+- Địa chỉ.
+- Cài đặt.
+
+Cho phép người xem thao tác mô phỏng toàn bộ luồng mua sắm bằng client-side state.
+
+Không triển khai giao dịch thật.
+
+### 12.3. W02 — Farmer Workspace
+
+Route định hướng: `/farmer`.
+
+Bao phủ các giao diện tương ứng:
+
+- Dashboard nhà nông.
+- Hồ sơ nhà vườn.
+- Danh sách sản phẩm.
+- Đăng bán bằng hình ảnh.
+- Giao diện ghi âm giọng nói.
+- Giao diện AI xử lý.
+- AI-generated description preview.
+- Chỉnh sửa bản nháp.
+- Xác nhận đăng bán demo.
+- Nhật ký sản xuất.
+- Nhật ký mùa vụ.
+- Quản lý lô nông sản.
+- Hộ chiếu và QR.
+- Quản lý đơn hàng.
+- Chi tiết đơn hàng.
+- Quản lý tồn kho.
+- Yêu cầu thanh niên hỗ trợ.
+- Lịch livestream.
+- Giao diện xác nhận sản phẩm bàn giao.
+- Báo cáo minh họa.
+- Hồ sơ chứng nhận.
+- Cài đặt.
+
+Đây là workspace cần UX khác biệt nhất.
+
+Thiết kế cho nhà nông khoảng 50 tuổi:
+
+- Font nội dung khoảng 16–18px hoặc lớn hơn khi phù hợp.
+- Nút thao tác chính từ 48px.
+- Touch target đủ lớn.
+- Ngôn ngữ tiếng Việt đơn giản.
+- Icon có nhãn chữ.
+- CTA chính dễ nhận biết.
+- Không sử dụng thuật ngữ kỹ thuật.
+- Không nhồi biểu đồ và KPI.
+- Không buộc người dùng điều hướng nhiều tầng.
+- Hạn chế thao tác thừa.
+
+Flow đăng bán phải có giao diện ba bước dễ hiểu:
+
+Bước 1: Chọn hình ảnh và nhập hoặc mô phỏng giọng nói.
+
+Bước 2: Xem bản nháp nội dung AI.
+
+Bước 3: Kiểm tra và xác nhận đăng sản phẩm demo.
+
+Không cần truy cập microphone hoặc camera thật.
+
+Có thể sử dụng file picker và ảnh mẫu để trình diễn giao diện.
+
+### 12.4. W03 — Youth & Learning Workspace
+
+Route định hướng: `/volunteer`.
+
+Bao phủ các giao diện tương ứng:
+
+- Dashboard thanh niên.
+- Danh sách nhiệm vụ.
+- Bộ lọc theo kỹ năng.
+- Nhiệm vụ online và trực tiếp.
+- Chi tiết nhiệm vụ.
+- Nhận nhiệm vụ demo.
+- Danh sách nhiệm vụ cá nhân.
+- Lịch hỗ trợ.
+- Lịch livestream.
+- Giao diện nộp minh chứng.
+- Giao diện theo dõi trạng thái duyệt.
+- Giờ tình nguyện.
+- Hồ sơ năng lực.
+- NaiPass.
+- Giao diện chứng nhận.
+- Học tập.
+- Bài học.
+- Quiz UI.
+- Thư viện 3D.
+- Farm as a Classroom.
+- Dự án cộng đồng.
+
+Thiết kế năng động hơn Farmer Workspace nhưng vẫn giữ cùng thương hiệu.
+
+Không biến workspace thành game hoặc lạm dụng điểm thưởng, bảng xếp hạng.
+
+Phải thể hiện rõ giá trị đóng góp của thanh niên và người thụ hưởng.
+
+### 12.5. W04 — Coordinator Workspace
+
+Route định hướng: `/coordinator`.
+
+Bao phủ các giao diện tương ứng:
+
+- Dashboard điều phối.
+- Danh sách nhà vườn.
+- Danh sách thanh niên.
+- Yêu cầu hỗ trợ.
+- Phân công nhiệm vụ.
+- Chi tiết nhiệm vụ.
+- Hàng chờ phê duyệt.
+- Đối chiếu hồ sơ.
+- Kiểm tra minh chứng.
+- Giao diện xác nhận giờ tình nguyện.
+- Dashboard tác động.
+- Bản đồ cộng đồng.
+- Báo cáo.
+- Lịch hoạt động.
+
+Ưu tiên dashboard rõ ràng, chuyên nghiệp, dễ đọc và phù hợp tác nghiệp.
+
+Các bảng dữ liệu phải có trạng thái rõ, tìm kiếm, filter UI và chi tiết dạng drawer hoặc page.
+
+Không triển khai hệ thống phê duyệt thật.
+
+### 12.6. W05 — Organization Workspace
+
+Route định hướng: `/organization`.
+
+Bao phủ các màn hình có trong Stitch và đặc tả được chọn:
+
+- Tổng quan tổ chức.
+- Thành viên.
+- Phạm vi hoạt động.
+- Danh sách chương trình.
+- Quản lý học tập.
+- Lớp học.
+- Dự án thực hành.
+- Nhà vườn đối tác.
+- Giao diện doanh nghiệp thu mua.
+- Giao diện RFQ nếu có.
+- Giao diện tài trợ nếu có.
+- Giao diện logistics nếu có.
+- Báo cáo và phê duyệt minh họa.
+
+Chỉ tạo các view và tabs phù hợp với từng loại tổ chức.
+
+Không tạo thêm nhiều portal riêng.
+
+### 12.7. W06 — Admin Workspace
+
+Route định hướng: `/admin`.
+
+Bao phủ các giao diện tương ứng:
+
+- Dashboard quản trị.
+- Danh sách tài khoản.
+- Danh sách tổ chức.
+- Giao diện quyền hạn.
+- Giao diện kiểm duyệt.
+- Hàng chờ hỗ trợ.
+- Quản lý nội dung.
+- Cấu hình dữ liệu.
+- Nhật ký hệ thống minh họa.
+- Báo cáo.
+- Cài đặt.
+
+Không xây dựng authentication hoặc authorization thật.
+
+Không tạo Admin có quyền thực sự trên dữ liệu hoặc hệ thống bên ngoài.
+
+Tất cả vai trò và quyền hạn chỉ là mô phỏng trực quan để trình diễn.
+
+### 12.8. Workspace switcher
+
+Tạo một cơ chế chuyển workspace phục vụ demo:
+
+- Cá nhân.
+- Nhà nông.
+- Thanh niên & người học.
+- Điều phối.
+- Tổ chức & đối tác.
+- Quản trị.
+
+Sử dụng một bộ layout và design system thống nhất.
+
+Workspace switcher phải rõ ràng đây là chế độ prototype, không phải cơ chế phân quyền bảo mật thật.
+
+Cho phép ban giám khảo chuyển qua từng workspace nhanh chóng mà không cần đăng nhập thật.
+
+---
+## 13. PHASE 8 — SHARED COMPONENT SYSTEM
+
+Xây dựng component library có tính tái sử dụng cao.
+
+### Navigation
+
+- Public header.
+- Desktop navigation.
+- Mega menu nếu phù hợp.
+- Sidebar.
+- Mobile bottom navigation.
+- Breadcrumb.
+- Workspace switcher.
+- User dropdown.
+- Notification panel.
+- Search dialog.
+
+### Commerce
+
+- Product card.
+- Product grid.
+- Product gallery.
+- Price display.
+- Quantity selector.
+- Category navigation.
+- Filter sidebar.
+- Filter drawer.
+- Cart item.
+- Checkout summary.
+- Order status.
+- Farm card.
+- Farm story section.
+- Seasonal product card.
+
+### Agriculture
+
+- Harvest timeline.
+- Production diary.
+- QR passport.
+- Certification status.
+- Batch information.
+- Farm information.
+- Agriculture map marker.
+- Experience booking card.
+
+### Dashboard
+
+- KPI card.
+- Metric display.
+- Chart container.
+- Data table.
+- Pagination UI.
+- Status chip.
+- Filter controls.
+- Activity timeline.
+- Task card.
+- Notification item.
+- Details drawer.
+
+### Forms
+
+- Input.
+- Textarea.
+- Select.
+- Checkbox.
+- Radio.
+- Date picker.
+- File uploader.
+- Voice recording mock control.
+- Stepper.
+- Progress indicator.
+- AI draft preview.
+
+### Feedback
+
+- Skeleton.
+- Empty state.
+- Error state.
+- Success state.
+- Confirmation dialog.
+- Toast.
+- Loading indicator.
+- Tooltip.
+- Inline validation.
+
+Mọi component phải có trạng thái hover, focus, active, disabled và loading nếu có ý nghĩa.
+
+Không tạo hiệu ứng hover cho thành phần không thể tương tác.
+
+Không sử dụng emoji thay cho hệ thống icon chính.
+
+---
+
+## 14. PHASE 9 — NAIAI FLOATING CHATBOT
+
+Tạo một chatbot UI nổi có tên **NaiAI**.
+
+Đây là giao diện chatbot, không phải tính năng AI thật.
+
+### Closed state
+
+- Floating bubble ở góc dưới bên phải.
+- Desktop khoảng 56–60px.
+- Mobile khoảng 52–56px.
+- Icon được thiết kế phù hợp thương hiệu.
+- Có tooltip hoặc nhãn khi cần.
+- Có hover và press feedback tinh tế.
+- Không che bottom navigation hoặc CTA.
+- Có khoảng cách an toàn với mép màn hình.
+
+### Open state
+
+Desktop:
+
+- Floating chat panel khoảng 360–420px.
+- Chiều cao phù hợp viewport.
+- Bo góc tinh tế.
+- Shadow có chiều sâu vừa phải.
+- Animation mở bằng opacity và translate.
+
+Mobile:
+
+- Bottom sheet hoặc full-height chat sheet phù hợp.
+- Hỗ trợ safe area.
+- Không bị keyboard che nội dung.
+- Có nút đóng và điều hướng rõ ràng.
+
+### Nội dung
+
+- NaiAI avatar.
+- Header.
+- Lời chào theo workspace.
+- Suggested prompts.
+- Message bubbles.
+- Timestamp demo khi cần.
+- Typing indicator.
+- Product recommendation card demo.
+- Link đến các màn hình liên quan.
+- Chat input.
+- Send button.
+- Attachment UI nếu thiết kế gốc có.
+- Voice UI nếu thiết kế gốc có.
+
+### Contextual prompts
+
+Khách hàng:
+
+- Tìm nông sản theo mùa.
+- Xem nguồn gốc sản phẩm.
+- Hướng dẫn đặt hàng.
+- Khám phá nhà vườn.
+
+Nhà nông:
+
+- Hướng dẫn đăng bán.
+- Gợi ý mô tả sản phẩm.
+- Cách ghi nhật ký.
+- Xem đơn hàng.
+
+Thanh niên:
+
+- Tìm nhiệm vụ phù hợp.
+- Hướng dẫn nộp minh chứng.
+- Chuẩn bị livestream.
+
+Điều phối:
+
+- Kiểm tra hồ sơ.
+- Hướng dẫn duyệt nhiệm vụ.
+
+Tổ chức và Admin:
+
+- Hướng dẫn sử dụng workspace tương ứng.
+
+Sử dụng mock responses được định nghĩa trước.
+
+Cho phép mở, đóng, thu nhỏ, chọn câu hỏi gợi ý và hiển thị hội thoại mô phỏng.
+
+Không gọi mô hình AI.
+
+Không gửi thông tin người dùng ra dịch vụ bên ngoài.
+
+Gắn nhãn rõ đây là chế độ minh họa.
+
+---
+
+## 15. PHASE 10 — PREMIUM MOTION DESIGN
+
+Sử dụng animation có chủ đích.
+
+Mục tiêu là tạo cảm giác website cao cấp, mượt mà và có phản hồi tự nhiên.
+
+Không phải tạo càng nhiều hiệu ứng càng tốt.
+
+### Global motion system
+
+Tạo các motion token nhất quán:
+
+- Fast: khoảng 120–160ms.
+- Normal: khoảng 180–240ms.
+- Medium: khoảng 260–350ms.
+- Slow: khoảng 400–600ms cho editorial reveal có chọn lọc.
+
+Ưu tiên transform và opacity.
+
+Không liên tục animate thuộc tính gây layout reflow.
+
+### Page transitions
+
+- Fade transition nhẹ.
+- Slide transition có giới hạn.
+- Không che toàn màn hình bằng animation kéo dài.
+- Không làm mất focus khi chuyển route.
+- Không làm chậm việc điều hướng.
+
+### Hero animation
+
+Ở trang chủ hoặc trang khám phá:
+
+- Editorial text reveal.
+- Image entrance.
+- Layered composition.
+- Organic visual depth.
+- Motion có tiết chế.
+- Hình ảnh nông sản nổi bật.
+
+Có thể sử dụng clip-path reveal hoặc mask animation nếu không gây giật.
+
+### Micro-interactions
+
+- Button press feedback.
+- Product card image scale nhẹ.
+- Favorite heart animation.
+- Add-to-cart feedback.
+- Hover underline.
+- Tab indicator.
+- Sidebar expand/collapse.
+- Animated active navigation.
+- Smooth accordion.
+- Dialog transitions.
+- Drawer transitions.
+- Tooltip.
+- Success checkmark.
+- Loading skeleton.
+- Progress step transition.
+
+### Scroll effects
+
+- Section reveal.
+- Image parallax nhẹ có chọn lọc.
+- Storytelling progression.
+- Sticky storytelling chỉ khi phù hợp.
+
+Không sử dụng scroll hijacking.
+
+Không bắt buộc người dùng phải cuộn theo tốc độ do animation quyết định.
+
+### Dashboard effects
+
+- Subtle chart entrance.
+- KPI value transition có giới hạn.
+- Row hover.
+- Status change animation.
+- Drawer transitions.
+Không làm cho biểu đồ giả lập nhảy số liên tục gây hiểu nhầm dữ liệu đang cập nhật trực tiếp.
+
+### Reduced motion
+
+Bắt buộc hỗ trợ `prefers-reduced-motion`.
+
+Khi người dùng bật reduced motion:
+
+- Tắt parallax.
+- Tắt custom cursor animation.
+- Tắt autoplay rotation.
+- Giảm hoặc loại bỏ chuyển cảnh.
+- Giữ toàn bộ chức năng điều hướng.
+
+---
+
+## 16. PHASE 11 — CUSTOM CURSOR & CREATIVE INTERACTION
+
+Chỉ sử dụng creative cursor tại các section editorial hoặc 3D phù hợp trên desktop.
+
+Có thể triển khai:
+
+- Subtle cursor follower.
+- View product cursor.
+- Drag-to-explore indicator.
+- Magnetic CTA nhẹ.
+- Cursor thay đổi theo đối tượng tương tác.
+
+Các quy tắc bắt buộc:
+
+- Không thay đổi cursor mặc định trên toàn website.
+- Không che nội dung.
+- Không làm giảm khả năng click.
+- Không gây delay khi di chuyển chuột.
+- Không sử dụng trên mobile.
+- Không sử dụng trong Farmer Dashboard.
+- Không sử dụng trong checkout hoặc form nhập liệu.
+- Tự động tắt khi reduced motion được bật.
+
+Nếu hiệu ứng không nâng cao trải nghiệm hoặc gây giảm performance, loại bỏ.
+
+---
+
+## 17. PHASE 12 — THREE.JS & INTERACTIVE 3D
+
+Tạo ít nhất một trải nghiệm 3D chất lượng cao nếu có asset phù hợp và không ảnh hưởng đến việc hoàn thành các màn hình cốt lõi.
+
+### 17.1. Hero 3D Object
+
+Có thể sử dụng:
+
+- Chùm chôm chôm.
+- Sầu riêng.
+- Bưởi.
+- Hạt điều.
+- Nông sản đặc trưng của Đồng Nai.
+
+3D phải có màu sắc tự nhiên, chất liệu đẹp, ánh sáng mềm và phù hợp theme NaiFarm.
+
+Không sử dụng quả cầu công nghệ ngẫu nhiên.
+
+Không sử dụng hình khối neon hoặc particle network không liên quan nông nghiệp.
+
+### 17.2. Interactive Product Viewer
+
+Tạo component xem mô hình sản phẩm 3D:
+
+- Rotate.
+- Zoom.
+- Drag.
+- Reset view.
+- Tooltip hướng dẫn.
+- Các điểm chú thích nếu mô hình phù hợp.
+
+Dùng React Three Fiber và Drei hoặc một giải pháp nhẹ tương đương.
+
+### 17.3. Educational 3D Viewer
+
+Nếu Stitch và Blueprint có màn hình học tập tương tác, có thể triển khai giao diện:
+
+- Cấu tạo quả bưởi.
+- Cấu tạo sầu riêng.
+- Hành trình hạt điều.
+- Minh họa quá trình sinh trưởng.
+
+Không tự gắn thông tin khoa học chưa kiểm chứng vào mô hình.
+
+### 17.4. Asset rules
+
+Ưu tiên:
+
+- GLB.
+- glTF.
+- Texture nén.
+- Asset local có giấy phép phù hợp.
+
+Nếu không có mô hình chất lượng, ưu tiên hình ảnh 2D đẹp thay vì tạo mô hình thô xấu.
+
+Không giả mạo mô hình được quét từ nhà vườn thật.
+
+Không tải asset không rõ bản quyền.
+
+### 17.5. Performance
+
+- Lazy load WebGL.
+- Dynamic import phía client.
+- Suspense fallback.
+- Poster image.
+- WebGL error fallback.
+- Giới hạn device pixel ratio.
+- Giảm số lượng texture và polygon.
+- Không tạo WebGL context ở mọi product card.
+- Ưu tiên tối đa một scene hoạt động trong cùng viewport.
+- Tắt rendering liên tục khi scene không cần cập nhật.
+- Có 2D fallback trên thiết bị yếu.
+
+3D là yếu tố hỗ trợ trải nghiệm, không phải điều kiện để website hoạt động.
+
+---
+
+## 18. PHASE 13 — IMAGE, VIDEO & ASSET QUALITY
+
+Rà soát toàn bộ asset của Stitch.
+
+Ưu tiên tái sử dụng hình ảnh gốc có quyền sử dụng.
+
+Nếu cần bổ sung, tìm nguồn asset có giấy phép phù hợp hoặc tạo hình minh họa hợp pháp bằng công cụ có sẵn.
+
+Hình ảnh phải phù hợp:
+
+- Vườn chôm chôm.
+- Sầu riêng.
+- Bưởi.
+- Hạt điều.
+- Cà phê.
+- Nhà nông Việt Nam.
+- Thanh niên hỗ trợ cộng đồng.
+- Thu hoạch.
+- Đóng gói.
+- Trải nghiệm nông nghiệp.
+- Giáo dục thực tế.
+
+Không sử dụng hình ảnh người nông dân nước ngoài không phù hợp bối cảnh địa phương nếu có lựa chọn tốt hơn.
+
+Không dùng ảnh AI méo mó, nhiều chi tiết vô lý hoặc sản phẩm không đúng chủng loại.
+
+Không sử dụng ảnh stock watermark.
+
+Không sử dụng URL ảnh ngẫu nhiên có nguy cơ hết hạn.
+
+Tải về asset hợp pháp cần thiết và tổ chức trong public/images.
+
+Ưu tiên:
+
+- WebP.
+- AVIF.
+- SVG.
+- Next.js Image.
+- Responsive image sizes.
+- Aspect ratio nhất quán.
+- Object-fit phù hợp.
+
+Không để bất kỳ ảnh sản phẩm nào bị vỡ, mất hình hoặc xuất hiện placeholder trắng khi demo.
+
+Các ảnh minh họa không phải hình ảnh nhà vườn thật phải được ghi rõ khi ngữ cảnh có thể gây hiểu nhầm.
+
+Tạo:
+
+`docs/ASSET_MANIFEST.md`
+
+Ghi rõ nguồn, loại asset và giấy phép nếu có.
+
+---
+
+## 19. PHASE 14 — MOCK DATA & INTERACTIVE PROTOTYPE
+
+Toàn bộ frontend phải có dữ liệu mẫu đủ đẹp, đủ thực tế và nhất quán.
+
+Không để Dashboard trống.
+
+Không sử dụng Lorem Ipsum.
+
+Không sử dụng User 1, Product 1 hoặc Example Item.
+
+Tái sử dụng bộ dữ liệu giả lập trong Blueprint.
+
+Ví dụ:
+
+Nhà vườn Ba Tư.
+
+Khu vực Long Khánh, Thành phố Đồng Nai.
+
+Quy mô 2,5 ha.
+
+Nhóm sản phẩm chôm chôm và sầu riêng.
+
+Hai thanh niên hỗ trợ theo bối cảnh đề thi.
+
+Tạo dữ liệu mẫu tập trung tại:
+
+`src/data/demo/`
+
+Các nhóm dữ liệu:
+
+- Products.
+- Farms.
+- Product batches.
+- Harvest diaries.
+- Customers.
+- Orders.
+- Volunteers.
+- Missions.
+- Evidence.
+- Livestream schedules.
+- Experiences.
+- Certificates.
+- Organizations.
+- Dashboard metrics.
+- Chat responses.
+
+Không sử dụng dữ liệu cá nhân thật của người khác.
+
+Không tạo chứng nhận OCOP hoặc số liệu tác động giả rồi thể hiện như đã được xác minh chính thức.
+Các màn hình liên quan phải dùng cùng ID, cùng tên, cùng mức giá và cùng trạng thái demo.
+
+Không để cùng một sản phẩm có ba mức giá khác nhau vì dữ liệu bị hardcode riêng lẻ.
+
+### Prototype interactions được phép
+
+- Điều hướng giữa các route.
+- Tab switching.
+- Search UI.
+- Filter trên mock data.
+- Sort trên mock data.
+- Quantity selector.
+- Client-side cart.
+- Accordion.
+- Modal.
+- Drawer.
+- Dropdown.
+- Stepper.
+- Mock form.
+- Mock status change.
+- Toast.
+- Chat UI.
+- 3D viewer.
+- Gallery.
+- Map marker selection.
+- Carousel.
+- Expand/collapse.
+- Demo workspace switching.
+
+Sử dụng React state hoặc Context khi cần thiết.
+
+Không xây dựng lớp service giả phức tạp chỉ để mô phỏng backend.
+
+Nếu dùng localStorage, chỉ lưu trạng thái prototype không nhạy cảm và xử lý đúng hydration.
+
+Có nút reset demo nếu cần để ban giám khảo có thể trình diễn lại từ đầu.
+
+---
+
+## 20. PHASE 15 — RESPONSIVE DESIGN & ACCESSIBILITY
+
+Kiểm thử ít nhất các viewport:
+
+- 320px.
+- 360px.
+- 390px.
+- 414px.
+- 768px.
+- 1024px.
+- 1280px.
+- 1440px.
+- 1920px cho các trang cần hiển thị trên màn hình lớn.
+
+Mobile marketplace phải thực sự đẹp, không chỉ thu nhỏ desktop.
+
+Dashboard mobile phải có responsive sidebar, card layout, bảng dữ liệu có cách trình bày phù hợp và các CTA dễ chạm.
+
+Không được có:
+
+- Horizontal overflow ngoài vùng cuộn có chủ đích.
+- Text clipping.
+- Header đè nội dung.
+- Sidebar che màn hình.
+- Button ngoài viewport.
+- Chatbot đè CTA.
+- Modal vượt chiều cao màn hình.
+- Bottom navigation che nội dung.
+- Hình ảnh méo.
+- Font lỗi tiếng Việt.
+
+### Accessibility
+
+Hướng đến WCAG AA cho các thành phần cốt lõi.
+
+Bắt buộc:
+
+- Semantic HTML.
+- Accessible names.
+- Proper label.
+- Alt text.
+- Keyboard navigation.
+- Focus visible.
+- Dialog focus management.
+- Escape-to-close.
+- Contrast.
+- Touch target phù hợp.
+- Screen reader-friendly states.
+- Reduced motion.
+- Không chỉ sử dụng màu sắc để biểu đạt trạng thái.
+
+Bảng dữ liệu cần heading và ngữ nghĩa phù hợp.
+
+Form phải có label, hướng dẫn và error state dễ hiểu.
+
+Người dùng nhà nông cần được ưu tiên về readability và thao tác đơn giản.
+
+---
+
+## 21. PHASE 16 — ANTI-AI-SLOP DESIGN REVIEW
+
+Sau khi hoàn thành các màn hình, kích hoạt Hallmark, Unslop, Taste Skill và UI UX Pro Max để review trực quan.
+
+Phải tìm và loại bỏ:
+
+- Gradient tím xanh mặc định kiểu AI.
+- Glassmorphism xuất hiện khắp nơi.
+- Neon glow không liên quan.
+- Random floating orb.
+- Rounded card quá mức.
+- Mọi section đều giống nhau.
+- Bento grid sử dụng thiếu mục đích.
+- Quá nhiều card lồng card.
+- Quá nhiều badge.
+- Quá nhiều pill-shaped elements.
+- Quá nhiều eyebrow text.
+- Icon có nền tròn xuất hiện khắp nơi.
+- Typography thiếu phân cấp.
+- Spacing không đều.
+- Generic hero copy.
+- Dashboard KPI giả tạo.
+- Stock imagery không liên quan.
+- Heading quá lớn nhưng thiếu nội dung.
+- Các CTA lặp lại vô nghĩa.
+- Nội dung quảng cáo sáo rỗng.
+- Excessive animation.
+- Emoji trang trí không cần thiết.
+- Shadow quá nặng.
+- Contrast thấp.
+- Visual clutter.
+
+Đối với các trang editorial, ưu tiên bố cục giàu cá tính.
+
+Đối với marketplace, ưu tiên khả năng khám phá và mua sắm.
+
+Đối với Farmer Workspace, ưu tiên sự đơn giản.
+
+Đối với dashboard điều phối và Admin, ưu tiên sự rõ ràng, chuyên nghiệp và khả năng đọc dữ liệu.
+
+Không áp dụng cùng một loại bố cục cho tất cả persona.
+
+Sau mỗi vòng review, trực tiếp sửa code.
+
+Không chỉ viết nhận xét.
+
+Thực hiện tối đa các vòng refinement có ích trong thời gian cho phép, ưu tiên lỗi có tác động lớn nhất.
+
+---
+
+## 22. PHASE 17 — PROTOTYPE FLOW INTEGRATION
+
+Kết nối các màn hình thành những user flow có thể trình diễn.
+
+### Flow A — Marketplace
+
+Trang chủ → Danh mục → Sản phẩm → QR → Nhật ký mùa vụ → Giỏ hàng → Checkout → Xác nhận demo → Chi tiết đơn.
+
+### Flow B — Voice-to-Market
+
+Farmer Dashboard → Đăng sản phẩm → Chọn ảnh → Giao diện giọng nói → AI draft demo → Chỉnh sửa → Xác nhận → Danh sách sản phẩm.
+
+### Flow C — Quản lý đơn nhà nông
+
+Dashboard → Danh sách đơn → Chi tiết đơn → Chọn trạng thái demo → Xem phản hồi giao diện.
+
+### Flow D — Thanh niên tình nguyện
+
+Dashboard → Nhiệm vụ → Chi tiết → Nhận nhiệm vụ demo → Nộp minh chứng → Trạng thái chờ duyệt → Hồ sơ năng lực.
+
+### Flow E — Điều phối
+
+Dashboard → Yêu cầu hỗ trợ → Chi tiết nhiệm vụ → Giao diện xác minh → Xác nhận giờ demo → Dashboard tác động.
+
+### Flow F — Trải nghiệm nông nghiệp
+
+Marketplace → Khám phá → Bản đồ → Hồ sơ nhà vườn → Giao diện trải nghiệm → Chọn lịch demo.
+
+### Flow G — NaiAI
+
+Mở chatbot → Chọn câu hỏi gợi ý → Nhận câu trả lời mô phỏng → Mở sản phẩm hoặc màn hình liên quan.
+
+### Flow H — 3D Learning
+
+Thư viện → Chọn nông sản → Mở mô hình 3D → Xoay/zoom → Xem nội dung minh họa.
+
+Điều chỉnh các flow trên theo màn hình thực tế trong Stitch và yêu cầu đề thi.
+
+Mỗi button trong luồng chính phải có hành động giao diện phù hợp.
+
+Không để các CTA quan trọng trỏ đến `#` hoặc click không phản hồi.
+
+Các tính năng nằm ngoài phạm vi prototype phải có trạng thái thông báo rõ ràng, không giả vờ đã hoạt động.
+
+---
+
+## 23. PHASE 18 — BROWSER TESTING & VISUAL VERIFICATION
+Không được kết thúc dự án chỉ vì code đã được tạo.
+
+Phải chạy website thực tế trên trình duyệt.
+
+Kích hoạt ECC verification workflow, browser tools, Playwright và các công cụ kiểm tra do Taste Skill cung cấp nếu tương thích.
+
+### Bước 1: Static checks
+
+Kiểm tra:
+
+- TypeScript errors.
+- ESLint errors.
+- Import errors.
+- Missing modules.
+- Missing assets.
+- Invalid routes.
+- React warnings.
+- Next.js configuration.
+- Dependency compatibility.
+
+### Bước 2: Production build
+
+Chạy các lệnh phù hợp với package manager hiện tại, ví dụ:
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
+
+Nếu chưa có script typecheck, bổ sung script phù hợp.
+
+Nếu phiên bản Next.js không còn hỗ trợ một lệnh lint cũ, sử dụng ESLint CLI và cấu hình tương ứng.
+
+Không bỏ qua lỗi TypeScript hoặc ESLint để ép build thành công.
+
+### Bước 3: Browser inspection
+
+Mở toàn bộ route.
+
+Kiểm tra:
+
+- Console errors.
+- Hydration errors.
+- Network errors.
+- Missing image.
+- Broken layout.
+- Font rendering.
+- Horizontal overflow.
+- Navigation.
+- Animation.
+- 3D fallback.
+- Chatbot.
+- Dialog.
+- Form state.
+- Responsive behavior.
+
+### Bước 4: Screenshot verification
+
+Chụp screenshot các màn hình ở ít nhất desktop 1440px và mobile 390px.
+
+Lưu tại:
+
+```text
+docs/screenshots/
+  desktop/
+  mobile/
+```
+
+Đối chiếu screenshot frontend với screenshot Stitch.
+
+Kiểm tra:
+
+- Visual similarity.
+- Layout consistency.
+- Typography.
+- Spacing.
+- Content completeness.
+- Responsive improvement.
+- Image quality.
+- Component states.
+
+Không yêu cầu giống từng pixel nếu sự khác biệt đến từ cải thiện accessibility hoặc responsive hợp lý.
+
+Mọi thay đổi lớn cần được giải thích.
+
+### Bước 5: Interaction testing
+
+Sử dụng Playwright kiểm tra toàn bộ flow cốt lõi.
+
+Kiểm tra các thao tác:
+
+- Mở marketplace.
+- Chọn sản phẩm.
+- Xem nguồn gốc.
+- Thêm vào giỏ demo.
+- Checkout demo.
+- Chuyển Farmer Workspace.
+- Đăng sản phẩm mô phỏng.
+- Chuyển Youth Workspace.
+- Xem nhiệm vụ.
+- Mở chatbot.
+- Chuyển Coordinator Workspace.
+- Truy cập Organization Workspace.
+- Truy cập Admin Workspace.
+- Mở 3D viewer nếu đã triển khai.
+- Điều hướng mobile.
+
+Các test không được gọi dịch vụ nghiệp vụ bên ngoài.
+
+### Bước 6: Fix loop
+
+Nếu phát hiện lỗi:
+
+1. Xác định nguyên nhân.
+2. Sửa code.
+3. Chạy lại test.
+4. Chụp lại screenshot nếu cần.
+5. Cập nhật TODO.
+6. Tiếp tục cho đến khi đạt acceptance criteria hoặc ghi nhận blocker thực tế.
+
+Không tự báo test pass nếu chưa chạy.
+
+---
+
+## 24. PHASE 19 — PERFORMANCE OPTIMIZATION
+
+Website cần hoạt động mượt mà trên laptop dùng để thi và trình diễn.
+Tối ưu:
+
+- JavaScript bundle.
+- Image size.
+- Font loading.
+- Dynamic imports.
+- WebGL loading.
+- Code splitting.
+- React re-render.
+- CSS animation.
+- Layout shift.
+- Client-side dependencies.
+- Browser memory.
+
+Các mục tiêu tham khảo nếu môi trường kiểm thử hỗ trợ:
+
+- Lighthouse Accessibility từ 95 trở lên.
+- Lighthouse Best Practices từ 90 trở lên.
+- Lighthouse Performance từ 90 trở lên trên các trang không có WebGL nặng.
+- CLS không quá 0,1.
+- LCP mục tiêu không quá 2,5 giây trong điều kiện đo phù hợp.
+
+Đây là mục tiêu tối ưu, không được bịa số liệu đạt được.
+
+Chỉ báo cáo các kết quả thực tế đã đo.
+
+Không hy sinh chất lượng nội dung và accessibility chỉ để nâng điểm Lighthouse.
+
+3D và các thư viện bản đồ phải được lazy load ở đúng màn hình.
+
+Không import Three.js vào toàn bộ ứng dụng.
+
+Không tải ảnh full-resolution không cần thiết.
+
+---
+
+## 25. PHASE 20 — FRONTEND BUILD & VERCEL READINESS
+
+Frontend phải tương thích triển khai trên Vercel.
+
+Yêu cầu:
+
+- Next.js production build thành công.
+- Không cần database.
+- Không cần API key runtime.
+- Không cần backend.
+- Không phụ thuộc localhost API.
+- Không phụ thuộc đường dẫn tuyệt đối trên máy Windows.
+- Không có missing asset.
+- Không có secret trong client bundle.
+- Không có route lỗi trong phạm vi đã triển khai.
+- Direct URL access hoạt động.
+- Browser refresh hoạt động.
+- Các liên kết nội bộ hoạt động.
+
+Sử dụng Next.js deployment mặc định tương thích Vercel.
+
+Không ép static export nếu source hoặc routing cần cấu hình khác.
+
+Nếu chọn static export, đảm bảo tất cả dynamic route đều có static params phù hợp và asset configuration tương thích.
+
+Tạo README.md đầy đủ:
+
+- Giới thiệu NaiFarm.
+- Frontend-only scope.
+- Technology stack.
+- Cách cài dependency.
+- Cách chạy local.
+- Cách build.
+- Cách chuyển workspace.
+- Cách sử dụng prototype.
+- Các demo routes.
+- Cách triển khai Vercel.
+- Giới hạn của prototype.
+
+Nếu workspace đã được kết nối với Vercel và có quyền triển khai rõ ràng, có thể tạo preview deployment để kiểm thử.
+
+Không tự ý thay thế production project hoặc deploy đè website không thuộc NaiFarm.
+
+Không tự ý push code lên repository không liên quan.
+
+---
+
+## 26. PHASE 21 — MANDATORY DESIGN DELIVERABLES
+
+Sau khi hoàn thành, phải có các sản phẩm sau:
+
+```text
+DESIGN.md
+README.md
+
+docs/
+  WORKSPACE_AUDIT.md
+  STITCH_SCREEN_AUDIT.md
+  SCREEN_INVENTORY.md
+  SCREEN_ROUTE_MAPPING.md
+  IMPLEMENTATION_PLAN.md
+  FRONTEND_ARCHITECTURE.md
+  UX_IMPROVEMENT_PLAN.md
+  DESIGN_DECISIONS.md
+  TODO.md
+  SKILL_EXECUTION_LOG.md
+ASSET_MANIFEST.md
+  TEST_REPORT.md
+  FINAL_HANDOVER.md
+  screenshots/
+    desktop/
+    mobile/
+
+.stitch/
+  metadata.json
+  screen-manifest.json
+  screens/
+
+src/
+  app/
+  components/
+  data/
+  hooks/
+  lib/
+  types/
+
+tests/
+```
+
+Giữ DESIGN.md gốc nếu đó là nguồn thiết kế đã được duyệt.
+
+Nếu cần bổ sung token frontend, sử dụng tài liệu hoặc file token riêng và ghi rõ thay đổi.
+
+`SCREEN_ROUTE_MAPPING.md` là tài liệu bắt buộc để chứng minh độ bao phủ Stitch.
+
+Đối với mỗi màn hình phải ghi:
+
+- Stitch screen ID.
+- Stitch screen name.
+- Workspace.
+- Frontend route hoặc component state.
+- Implementation status.
+- Desktop screenshot.
+- Mobile screenshot nếu phù hợp.
+- Verification status.
+
+Có thể bổ sung một trang `/demo` hoặc `/design-preview` để ban giám khảo nhanh chóng mở toàn bộ màn hình đã triển khai.
+
+Trang này phải được nhận diện là công cụ điều hướng prototype, không phải chức năng nghiệp vụ của NaiFarm.
+
+---
+
+## 27. PRIORITY ORDER — THỨ TỰ ƯU TIÊN TRONG HACKATHON
+
+Ưu tiên hoàn thiện một sản phẩm có thể trình diễn trọn vẹn trước khi dành thời gian cho hiệu ứng nâng cao.
+
+### Priority P0
+
+- Truy xuất và kiểm kê Stitch.
+- Design system.
+- Public marketplace.
+- Hồ sơ nhà vườn.
+- Trang sản phẩm.
+- QR và nhật ký mùa vụ.
+- Giỏ hàng.
+- Checkout UI.
+- Đăng sản phẩm bằng ảnh và giọng nói UI.
+- AI draft UI.
+- Quản lý đơn nhà nông.
+- Lịch livestream.
+- Youth mission UI.
+- Điều phối và giờ tình nguyện UI.
+- Responsive.
+- Navigation.
+- Production build.
+
+### Priority P1
+
+- Các màn hình Stitch còn lại.
+- Organization Workspace.
+- Admin Workspace.
+- NaiAI chatbot.
+- Bản đồ.
+- Dashboard charts.
+- Shared states.
+- Hoàn thiện hình ảnh.
+- Motion design.
+- Design polish.
+
+### Priority P2
+
+- Interactive 3D.
+- Custom cursor.
+- Scroll storytelling.
+- Premium visual enhancements.
+- Các màn hình mở rộng chưa có trong Stitch.
+
+P0, P1 và P2 là thứ tự triển khai, không phải quyền tự ý bỏ màn hình đã có trong Stitch.
+
+Nếu thời gian hạn chế, ưu tiên hoàn thành layout và navigation cho toàn bộ màn hình nguồn trước, sau đó nâng cao thị giác theo thứ tự.
+
+Không dành phần lớn thời gian để tạo một hero 3D trong khi các màn hình bắt buộc còn thiếu.
+
+---
+
+## 28. DEFINITION OF DONE — TIÊU CHÍ HOÀN THÀNH
+
+Chỉ được báo hoàn thành toàn bộ khi đã kiểm chứng:
+
+- Đã kiểm kê Stitch project và ghi rõ độ bao phủ thực tế.
+- Đã đọc và sử dụng sáu bộ skill theo khả năng hiện có.
+- Đã xây dựng design system thống nhất.
+- Đã tạo đủ các route và view tương ứng với màn hình nguồn.
+- Đã hoàn thiện sáu workspace.
+- Đã hoàn thiện các màn hình bắt buộc của đề thi.
+- Đã kết nối các prototype flow chính.
+- Đã tạo NaiAI chatbot UI.
+- Đã hoàn thiện responsive desktop và mobile.
+- Đã có dữ liệu demo nhất quán.
+- Đã rà soát UI/UX từng màn hình.
+- Đã kiểm tra accessibility.
+- Đã thực hiện anti-AI-slop review.
+- Đã kiểm tra animation.
+- Đã kiểm tra 3D fallback nếu triển khai 3D.
+- Đã kiểm tra trình duyệt thực tế.
+- Đã chạy production build.
+- Đã kiểm tra không có lỗi nghiêm trọng trong console.
+- Đã chụp screenshot.
+- Đã có tài liệu bàn giao.
+- Đã sẵn sàng triển khai frontend trên Vercel.
+- Không phát sinh backend, database hoặc API nghiệp vụ.
+
+Nếu có tiêu chí chưa đạt, ghi rõ trạng thái và nguyên nhân.
+
+Không sử dụng những từ như hoàn hảo, 100% hoặc production-ready nếu chưa có bằng chứng tương ứng.
+
+---
+
+## 29. AUTONOMOUS EXECUTION PROTOCOL
+
+Thực hiện theo nguyên tắc:
+
+DISCOVER → EXTRACT → AUDIT → PLAN → TODO → DESIGN SYSTEM → IMPLEMENT → RUN → INSPECT → REVIEW → FIX → VERIFY → BUILD → HANDOVER.
+
+Không chỉ trả về lời giải thích.
+
+Không chỉ trả về code block.
+
+Không chỉ viết một bản kế hoạch.
+
+Không chỉ tạo homepage.
+
+Không bỏ sót màn hình Stitch.
+
+Không dừng sau milestone đầu tiên.
+
+Không yêu cầu người dùng liên tục trả lời Continue.
+
+Không yêu cầu xác nhận các quyết định kỹ thuật thông thường có thể tự giải quyết an toàn.
+
+Không triển khai backend ngoài phạm vi.
+
+Tự động đọc source code, chỉnh sửa file, sử dụng terminal, chạy lệnh, mở browser và kiểm tra kết quả bằng những công cụ được cấp quyền.
+
+Sau mỗi milestone:
+
+- Cập nhật TODO.md.
+- Cập nhật screen inventory.
+- Ghi nhận các màn hình đã hoàn thành.
+- Ghi nhận blocker.
+- Kiểm tra lỗi.
+- Tiếp tục milestone kế tiếp.
+
+Nếu có công cụ hoặc skill không khả dụng, dùng phương án tương đương trong phạm vi được phép và ghi rõ hạn chế.
+
+Nếu có tác vụ độc lập và môi trường hỗ trợ subagent, có thể phân công song song:
+
+- Design audit agent.
+- Frontend architecture agent.
+- Marketplace UI agent.
+- Dashboard UI agent.
+- Component system agent.
+- Visual quality reviewer.
+- Browser testing agent.
+
+Phải tránh xung đột chỉnh sửa file và giữ một design system duy nhất.
+
+Không tạo nhiều agent chỉ để tăng độ phức tạp.
+
+---
+
+## 30. FINAL RESPONSE — BÁO CÁO BÀN GIAO
+
+Sau khi đã thực sự thực hiện các công việc, báo cáo ngắn gọn và chính xác:
+
+1. Workspace và source path.
+2. Stitch Project ID đã sử dụng.
+3. Tổng số màn hình truy xuất được.
+4. Tổng số màn hình đã hiện thực hóa.
+5. Số màn hình còn thiếu hoặc chưa xác minh.
+6. Các workspace đã hoàn thành.
+7. Các route chính.
+8. Các skill đã sử dụng thực tế.
+9. Các animation và hiệu ứng đã triển khai.
+10. Các trải nghiệm 3D đã triển khai.
+11. Kết quả responsive testing.
+12. Kết quả accessibility testing.
+13. Kết quả Playwright.
+14. Kết quả production build.
+15. Link local preview thực tế nếu server đang chạy.
+16. Link Vercel preview thực tế nếu đã deploy thành công.
+17. Các file screenshot.
+18. Các giới hạn hiện tại.
+19. Hướng dẫn chạy và trình diễn.
+
+Không bịa kết quả test, số lượng màn hình hoặc deployment URL.
+
+Mục tiêu cuối cùng là một sản phẩm NaiFarm có UI/UX và frontend nổi bật, hiện đại, chuyên nghiệp, trực quan, có bản sắc nông nghiệp Đồng Nai, phù hợp với đề thi Chợ OCOP Thanh niên và có khả năng trình diễn thuyết phục trước ban giám khảo.
+
+Website phải đẹp như một sản phẩm được thiết kế có chủ đích bởi đội ngũ product design chuyên nghiệp, không giống template AI đại trà.
+
+Bây giờ hãy bắt đầu thực thi ngay trong workspace hiện tại.
+
+Khởi động bằng việc phát hiện skill, kiểm tra môi trường, kết nối chính xác Stitch Project ID `12256474506032242478`, truy xuất toàn bộ màn hình và lập screen inventory.
+
+Sau đó tự động thực hiện đầy đủ các milestone, viết source code, chạy website, kiểm tra bằng browser, sửa lỗi, hoàn thiện frontend và production build.
+
+**DO NOT STOP AT PLANNING. EXECUTE THE COMPLETE FRONTEND IMPLEMENTATION.**

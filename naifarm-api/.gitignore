@@ -1,0 +1,11 @@
+# phụ thuộc / build
+node_modules/
+dist/
+.wrangler/
+
+# bí mật cục bộ
+.dev.vars
+
+# supabase CLI
+supabase/.branches/
+supabase/.temp/

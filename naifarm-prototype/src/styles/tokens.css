@@ -1,0 +1,127 @@
+@import './fonts.css';
+@import 'tailwindcss';
+
+/* ============================================================
+   NaiFarm Design Tokens — Modern Agricultural Editorial
+   Nguồn chân lý: DESIGN.md (alpha) — ánh xạ 1:1
+   Light-only theo DESIGN.md (không dark-mode trong MVP)
+   ============================================================ */
+@theme {
+  /* Colors */
+  --color-primary: #245b3d;
+  --color-on-primary: #ffffff;
+  --color-primary-hover: #19472e;
+  --color-leaf: #6c9c5b;
+  --color-background: #f5f3e9;
+  --color-surface: #ffffff;
+  --color-surface-soft: #eaf0e5;
+  --color-accent: #d7a34d;
+  --color-on-accent: #25352b;
+  --color-text: #25352b;
+  --color-muted: #52645a;
+  --color-border: #d6ded2;
+  --color-input-border: #788a7b;
+  --color-focus: #245b3d;
+  --color-success: #24603b;
+  --color-success-bg: #e6f3e9;
+  --color-warning: #80520c;
+  --color-warning-bg: #fff2d8;
+  --color-danger: #a32d2d;
+  --color-danger-bg: #fdecec;
+  --color-info: #245b78;
+  --color-info-bg: #e8f2f8;
+
+  /* Hỗ trợ cho ngôn ngữ Stitch: nút vàng nhạt + header xanh đậm */
+  --color-gold-soft: #f6e6b0;
+  --color-gold-soft-hover: #f0da92;
+  --color-gold-ink: #5a4415;
+  --color-header: #1f4d33;
+  --color-header-hover: #173e29;
+
+  /* Typography */
+  --font-display: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-card: 0 2px 8px rgba(37, 53, 43, 0.06);
+  --shadow-raised: 0 8px 24px rgba(37, 53, 43, 0.12);
+  --shadow-overlay: 0 16px 48px rgba(37, 53, 43, 0.18);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    color: var(--color-text);
+    line-height: 1.25;
+  }
+  :where(a) { color: inherit; }
+  /* Số tiền / tồn / KPI dùng chữ số tabular */
+  .tnum { font-variant-numeric: tabular-nums; }
+  /* Focus ring thấy rõ trên nền sáng và tối */
+  :where(button, a, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  ::selection { background: #d7a34d55; }
+
+  /* Tôn trọng giảm chuyển động */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Ẩn scrollbar cho dải cuộn ngang */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  @keyframes nf-fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
+  .nf-reveal { animation: nf-fade-up 400ms var(--ease-out) both; }
+
+  @keyframes nf-dots {
+    0%, 80%, 100% { opacity: 0.25; }
+    40% { opacity: 1; }
+  }
+  .nf-dot { animation: nf-dots 1.2s infinite ease-in-out; }
+  .nf-dot:nth-child(2) { animation-delay: 0.15s; }
+  .nf-dot:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Hiệu ứng gợn sóng khi ghi âm thật (chỉ dùng khi có audio thực) */
+  @keyframes nf-wave {
+    0%, 100% { transform: scaleY(0.35); }
+    50% { transform: scaleY(1); }
+  }
+  .nf-wave { animation: nf-wave 900ms ease-in-out infinite; transform-origin: center; }
+}

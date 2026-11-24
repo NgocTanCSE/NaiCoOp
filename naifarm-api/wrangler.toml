@@ -1,0 +1,18 @@
+name = "naifarm-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Biến công khai (không phải bí mật)
+[vars]
+ENVIRONMENT = "development"
+CORS_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173"
+
+# Bí mật — đặt bằng `wrangler secret put <TÊN>` hoặc file .dev.vars khi chạy `wrangler dev`:
+#   SUPABASE_URL
+#   SUPABASE_ANON_KEY
+#   SUPABASE_SERVICE_ROLE_KEY
+#   SUPABASE_JWT_SECRET   (tùy chọn — nếu không đặt sẽ xác minh JWT qua JWKS)
+
+[observability]
+enabled = true
